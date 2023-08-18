@@ -14,12 +14,12 @@
     <a class="바로이동" href="#명제와_연결사" style="margin-left: 75px;">1.1.1.1. 명제와 연결사</a><br>
     <a class="바로이동" href="#진리표" style="margin-left: 75px;">1.1.1.2 진리표</a><br>
     <a class="바로이동" href="#연역적_추론" style="margin-left: 75px;">1.1.1.3. 연역적 추론</a><br>
-    <a class="바로이동" href="#명제함수의_부정" style="margin-left: 50px;">1.1.2. 명제함수의 부정</a><br>
+    <a class="바로이동" href="#명제함수와_부정" style="margin-left: 50px;">1.1.2. 명제함수와 부정</a><br>
     <a class="바로이동" href="#명제함수와_한정기호" style="margin-left: 75px;">1.1.2.1 명제함수와 한정기호</a><br>
     <a class="바로이동" href="#명제의_부정" style="margin-left: 75px;">1.1.2.2 명제의 부정</a><br>
-    <a class="바로이동" href="#함의와_동치t" style="margin-left: 50px;">1.1.3. 함의와_동치</a><br>
+    <a class="바로이동" href="#함의와_동치t" style="margin-left: 50px;">1.1.3. 함의와 동치</a><br>
     <a class="바로이동" href="#항진명제와_모순명제" style="margin-left: 75px;">1.1.3.1. 항진명제와 모순명제</a><br>
-    <a class="바로이동" href="#함의와_동치c" style="margin-left: 75px;">1.1.3.2. 함의와 동치</a><br>
+    <a class="바로이동" href="#함의와_동치" style="margin-left: 75px;">1.1.3.2. 함의와 동치</a><br>
     <div class="dividing_line"></div>
     <h2 id="집합론">1. 집합론</h2>
     <a href="#title">
@@ -34,6 +34,7 @@
         소박한 집합론에는 러셀의 역설 등 문제가 있어서,<br>
         ZFC공리계 등을 바탕으로 하는 공리적 집합론이 나오게 되었다.
     </p>
+    <a href="https://sites.google.com/mensakorea.org/math/%EC%B7%A8%EB%AF%B8%EB%A1%9C-%EC%88%98%ED%95%99%ED%95%98%EC%9E%90/%EC%A7%91%ED%95%A9%EB%A1%A0?authuser=0" target="_blank" style="color: black; text-decoration: none;">이후 내용의 출처</a>
     <div class="dividing_line"></div>
     <h2 id="명제와_논리">1.1. 명제와 논리</h2>
     <a href="#title">
@@ -634,5 +635,293 @@ p→(q→r) ≡ p→(~q∨r) (∵①)<br>
                 </ol>
             </p>
     </details>
+    <div class="dividing_line"></div>
+    <h2 id="명제함수와_부정">1.1.2. 명제함수와 부정</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <div class="dividing_line"></div>
+    <h2 id="명제함수와_한정기호">1.1.2.1 명제함수와 한정기호</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        <strong>명제함수</strong>: 변수 x가 결정되어야만 참, 거짓이 판단되는 문장 (P(x), Q(x), ...),<br>
+        x의 범위(U): 대상 영역/모집단<br>
+        <strong>한정기호</strong>: 전칭기호와 존재기호<br>
+        <em>전칭기호</em>: ∀(for every <strong>모든</strong> ~에 대하여)<br>
+        <em>한정기호</em>: ∃(for some 적어도 1개는 <strong>존재</strong>한다.)<br>
+    </p>
+    <div class="dividing_line"></div>
+    <h2 id="명제의_부정">1.1.2.2 명제의 부정</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        두 명제 p, q에 대해 x의 모집단은 건드리지 않도록 하며<br>
+        다음 4가지 원리를 모두 적용한다.<br>
+        <table>
+            <th class="진리표">기호</th>
+            <th>부정</th>
+            <th class="진리표">기호</th>
+            <tr>
+                <td>∀</td>
+                <td>부정</td>
+                <td>∃</td>
+            </tr>
+            <tr>
+                <td>∨</td>
+                <td>부정</td>
+                <td>∧</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>부정</td>
+                <td>~p</td>
+            </tr>
+            <tr>
+                <td><</td>
+                <td>부정</td>
+                <td>≥</td>
+            </tr>
+        </table>
+    </p>
+    <div class="dividing_line"></div>
+    <h2 id="함의와_동치">1.1.3. 함의와 동치</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <div class="dividing_line"></div>
+    <h2 id="항진명제와_모순명제">1.1.3.1. 항진명제와 모순명제</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        <strong>항진명제</strong>: 모든 논리적 가능성의 진리갑들이 참인 명제 (t 모집단 전체)<br>
+        <strong>모순명제</strong>: 모든 논리적 가능성의 진리갑들이 거짓인 명제 (c 공집합)<br>
+        항진명제 + 모순명제 = 진리집합<br>
+        항진명제와 모순명제의 성질<br>
+        :임의의 명제 p에 대하여<br>
+        <ol>
+            <li>p∨~p ≡ t</li>
+            <li>p∧~p ≡ c</li>
+            <li>t∨p ≡ t</li>
+            <li>c∨p ≡ p</li>
+            <li>t∧p ≡ p</li>
+            <li>c∧p ≡ c</li>
+        </ol>
+        <details>
+            <summary>[증명 보기·숨기기]</summary>
+            <p>
+                <ol>
+                    <li>
+                        <table>
+                            <th class="진리표">p</th>
+                            <th class="진리표">∨</th>
+                            <th class="진리표">~</th>
+                            <th class="진리표">p</th>
+                            <th><!--빈공간--></th>
+                            <th class="진리표">t</th>
+                            <tr>
+                                <td><em>T</em></td>
+                                <td><strong>T</strong></td>
+                                <td><em>F</em></td>
+                                <td>T</td>
+                                <td><!--빈공간--></td>
+                                <td><strong>T</strong></td>
+                            </tr>
+                            <tr>
+                                <td><em>F</em></td>
+                                <td><strong>T</strong></td>
+                                <td><em>T</em></td>
+                                <td>F</td>
+                                <td><!--빈공간--></td>
+                                <td><strong>T</strong></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <th class="진리표">p</th>
+                            <th class="진리표">∧</th>
+                            <th class="진리표">~</th>
+                            <th class="진리표">p</th>
+                            <th><!--빈공간--></th>
+                            <th class="진리표">c</th>
+                            <tr>
+                                <td><em>T</em></td>
+                                <td><strong>F</strong></td>
+                                <td><em>F</em></td>
+                                <td>T</td>
+                                <td><!--빈공간--></td>
+                                <td><strong>F</strong></td>
+                            </tr>
+                            <tr>
+                                <td><em>F</em></td>
+                                <td><strong>F</strong></td>
+                                <td><em>T</em></td>
+                                <td>F</td>
+                                <td><!--빈공간--></td>
+                                <td><strong>F</strong></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <th class="진리표">t</th>
+                            <th class="진리표">∨</th>
+                            <th class="진리표">p</th>
+                            <th><!--빈공간--></th>
+                            <th class="진리표">t</th>
+                            <tr>
+                                <td><em>T</em></td>
+                                <td><strong>T</strong></td>
+                                <td><em>T</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>T</strong></td>
+                            </tr>
+                            <tr>
+                                <td><em>T</em></td>
+                                <td><strong>T</strong></td>
+                                <td><em>F</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>T</strong></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <th class="진리표">c</th>
+                            <th class="진리표">∨</th>
+                            <th class="진리표">p</th>
+                            <th><!--빈공간--></th>
+                            <th class="진리표">p</th>
+                            <tr>
+                                <td><em>F</em></td>
+                                <td><strong>T</strong></td>
+                                <td><em>T</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>T</strong></td>
+                            </tr>
+                            <tr>
+                                <td><em>F</em></td>
+                                <td><strong>F</strong></td>
+                                <td><em>F</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>F</strong></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <th class="진리표">t</th>
+                            <th class="진리표">∧</th>
+                            <th class="진리표">p</th>
+                            <th><!--빈공간--></th>
+                            <th class="진리표">p</th>
+                            <tr>
+                                <td><em>T</em></td>
+                                <td><strong>T</strong></td>
+                                <td><em>T</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>T</strong></td>
+                            </tr>
+                            <tr>
+                                <td><em>T</em></td>
+                                <td><strong>F</strong></td>
+                                <td><em>F</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>F</strong></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <th class="진리표">c</th>
+                            <th class="진리표">∧</th>
+                            <th class="진리표">p</th>
+                            <th><!--빈공간--></th>
+                            <th class="진리표">c</th>
+                            <tr>
+                                <td><em>F</em></td>
+                                <td><strong>F</strong></td>
+                                <td><em>T</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>F</strong></td>
+                            </tr>
+                            <tr>
+                                <td><em>F</em></td>
+                                <td><strong>F</strong></td>
+                                <td><em>F</em></td>
+                                <td><!--빈공간--></td>
+                                <td><strong>F</strong></td>
+                            </tr>
+                        </table>
+                    </li>
+                </ol>
+            </p>
+        </details>
+    </p>
+    <p class="본문">
+        *다음 명제를 각각 증명해보자<br>
+        <ol>
+            <li>~p → c ≡ p</li>
+            <li>(p → q)∧(q → r) → (p → r) ≡ t (3단논법, 추이법칙)</li>
+        </ol>
+    </p>
+    <details>
+        <summary>[증명 보기·숨기기]</summary>
+            <p>
+                <ol>
+                    <li>
+                        <pre class="본문">
+~p→c ≡ p∨c (∵①)
+      ≡ p (∵모순명제의 성질)■
+                        </pre>
+                    </li>
+                    <li>
+                        <pre class="본문">
+(p → q)∧(q → r) → (p → r)
+≡ (~p ∨ q)∧(~q ∨ r) → (~p ∨ r) (∵①)
+≡ ~(~p ∨ r) → ~(~p ∨ q)∨~(~q ∨ r) (∵③)
+≡ (p ∧ ~r) → (p ∧ ~q)∨(q ∧ ~r) (자명하다.)
+≡ ~(p∧~r) ∨ (p ∧ ~q)∨(q ∧ ~r) (∵①)
+≡ ~p ∨ r ∨ (p ∧ ~q) ∨ (q ∧ ~r) (∵②)
+≡ (~p ∨ (p ∧ ~q)) ∨ (r ∨(q ∧ ~r)) (∵④)
+≡ ((~p ∨ p) ∧ (~p ∨ ~q)) ∨ ((r ∨ q) ∧ (r ∨ ~r)) (∵⑤)
+≡ (t ∧ (~p ∨ ~q)) ∨ ((r ∨ q) ∧ t) (∵항진명제의 성질)
+≡ (~p ∨ ~q) ∨ (r ∨ q) (∵항진명제의 성질)
+≡ (~q ∨ q) ∨ (~p ∨ r) (∵④)
+≡ t ∨ (~p ∨ r) (∵항진명제의 성질)
+≡ t (∵항진명제의 성질)■
+                        </pre>
+                    </li>
+                </ol>
+            </p>
+    </details>
+    <div class="dividing_line"></div>
+    <h2 id="함의와_동치">1.1.3.2. 함의와 동치</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        <strong>함의</strong>: 항진인 조건문 p → q를 논리적 함의라고 하고,<br>
+        p ⇒ q라고 나타낸다. 이때, p는 q의 충분조건, q는 p의 필요조건이라고 한다.<br>
+        <strong>동치</strong>: 항진인 쌍조건문 p ↔ q를 동치라고 하고,<br>
+        p ⇔ q라고 나타낸다. 이때, p와 q는 서로의 필요충분조건이라고 한다.(cf.⇔와 ≡는 논리적으로 같다)
+    </p>
+    <div class="dividing_line"></div>
 </body>
 </html>
