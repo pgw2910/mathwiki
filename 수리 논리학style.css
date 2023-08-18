@@ -1,0 +1,26 @@
+.바로이동{
+    color: blue;
+    text-decoration: none;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.본문{
+    width: auto;
+    color: darkblue;
+}
+.dividing_line{
+    background-color: black;
+    width: 100%;
+    height: 0.1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.진리표{
+    width: 35PX;
+    height: 35px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 3px;
+}

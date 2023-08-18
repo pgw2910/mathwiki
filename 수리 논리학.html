@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>수리 논리학</title>
+    <link rel="stylesheet" href="./수리 논리학style.css">
+</head>
+<body>
+    <h1 id="title">수리 논리학 ver.1(수정예정)</h1>
+    <a class="바로이동" href="#집합론">1. 집합론</a><br>
+    <a class="바로이동" href="#명제와_논리" style="margin-left: 25px;">1.1. 명제와 논리</a><br>
+    <a class="바로이동" href="#명제와_증명" style="margin-left: 50px;">1.1.1 명제와 증명</a><br>
+    <a class="바로이동" href="#명제와_연결사" style="margin-left: 75px;">1.1.1.1. 명제와 연결사</a><br>
+    <a class="바로이동" href="#진리표" style="margin-left: 75px;">1.1.1.2 진리표</a><br>
+    <a class="바로이동" href="#연역적_추론" style="margin-left: 75px;">1.1.1.3. 연역적 추론</a><br>
+    <a class="바로이동" href="#명제함수의_부정" style="margin-left: 50px;">1.1.2. 명제함수의 부정</a><br>
+    <a class="바로이동" href="#명제함수와_한정기호" style="margin-left: 75px;">1.1.2.1 명제함수와 한정기호</a><br>
+    <a class="바로이동" href="#명제의_부정" style="margin-left: 75px;">1.1.2.2 명제의 부정</a><br>
+    <a class="바로이동" href="#함의와_동치t" style="margin-left: 50px;">1.1.3. 함의와_동치</a><br>
+    <a class="바로이동" href="#항진명제와_모순명제" style="margin-left: 75px;">1.1.3.1. 항진명제와 모순명제</a><br>
+    <a class="바로이동" href="#함의와_동치c" style="margin-left: 75px;">1.1.3.2. 함의와 동치</a><br>
+    <div class="dividing_line"></div>
+    <h2 id="집합론">1. 집합론</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        집합론은 추상적 대상들의 모임인 집합을 연구하는 수학 이론이다.<br>
+        집합론은 대부분의 수학기초론 체계의 근본으로, 현대 수학을 논리적으로 지탱하는 밑바탕이 된다.<br>
+        집합을 단순히 대상들의 모임이라 이해하는 것을 소박한 집합론(고등학교 수준의 집합론)이라 한다.<br>
+        소박한 집합론에는 러셀의 역설 등 문제가 있어서,<br>
+        ZFC공리계 등을 바탕으로 하는 공리적 집합론이 나오게 되었다.
+    </p>
+    <div class="dividing_line"></div>
+    <h2 id="명제와_논리">1.1. 명제와 논리</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <div class="dividing_line"></div>
+    <h2 id="명제와_증명">1.1.1 명제와 증명</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <div class="dividing_line"></div>
+    <h2 id="명제와_연결사">1.1.1.1. 명제와 연결사</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        <strong>명제</strong>: 참, 거짓이 분명히 판단되는 문장<br>
+        <strong>단순명제</strong>는 p, q, r, ...으로 나타냄<br>
+        <strong>합성명제</strong>: 몇 개의 단순명제들이 연결사에 의해 결합된 명제<br>
+        <strong>연결사</strong>: 두 명제 p와 q에 대해<br>
+            <table border="1px">
+                <th>명칭</th>
+                <th>기호</th>
+                <th>읽는 법</th>
+                <tr>
+                    <td style="margin: 3px;"><strong>부정</strong></td>
+                    <td style="margin: 3px;">~p</td>
+                    <td style="margin: 3px;">not p</td>
+                </tr>
+                <tr>
+                    <td style="margin: 3px;"><strong>논리곱</strong></td>
+                    <td style="margin: 3px;">p∧q</td>
+                    <td style="margin: 3px;">p and q</td>
+                </tr>
+                <tr>
+                    <td style="margin: 3px;"><strong>논리합</strong></td>
+                    <td style="margin: 3px;">p∨q</td>
+                    <td style="margin: 3px;">not p</td>
+                </tr>
+                <tr>
+                    <td style="margin: 3px;"><strong>조건</strong></td>
+                    <td style="margin: 3px;">p→q</td>
+                    <td style="margin: 3px;">if p, then q</td>
+                </tr>
+                <tr>
+                    <td style="margin: 3px;"><strong>쌍조건</strong></td>
+                    <td style="margin: 3px;">p↔q</td>
+                    <td style="margin: 3px;">p if and only if q (p iff q)</td>
+                </tr>
+            </table>
+    <p class="본문">
+        이다.
+    </p>
+    <div class="dividing_line"></div>
+    <h2 id="진리표">1.1.1.2 진리표</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        <strong>진리표</strong>: 명제의 진리값을 표로 나타낸 것<br>
+        *5가지 연결사들에 대한 진리표
+        <table border="1">
+            <th class="진리표">p</th>
+            <th class="진리표">q</th>
+            <th class="진리표">~p</th>
+            <th class="진리표">p∧q</th>
+            <th class="진리표">p∨q</th>
+            <th class="진리표">p→q</th>
+            <th class="진리표">p↔q</th>
+            <tr>
+                <td>T</td>
+                <td>T</td>
+                <td rowspan="2">F</td>
+                <td>T</td>
+                <td>T</td>
+                <td>T</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+                <td>T</td>
+                <td>F</td>
+                <td>F</td>
+                
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>T</td>
+                <td rowspan="2">T</td>
+                <td>F</td>
+                <td>T</td>
+                <td>T</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+                <td>T</td>
+                <td>T</td>
+            </tr>
+        </table>
+    <p class="본문">
+        진리표를 사용하여 다음 명제들이 항상 참임을 증명하자.(단, ≡는 논리적 동치를 나타내는 기호)
+        <ol>
+            <li>p → q ≡ ~p∨q</li>
+            <li>~(p∧q) ≡ ~p∨~q(드 모르간 법칙)</li>
+            <li>p → q ≡ ~q → ~p(대우법칙)</li>
+            <li>(p∨q)∨r ≡ p∨(q∨r)(결합법칙)</li>
+            <li>p∨(q∧r) ≡ (p∨q)∧(p∨r)(분배법칙)</li>
+        </ol>
+        <details>
+            <summary>[증명 보기·숨기기]</summary>
+            <p>
+                <ol>
+                    <li>p → q ≡ ~p∨q</li>
+                    <table>
+                        <th class="진리표">p</th>
+                        <th class="진리표">→</th>
+                        <th class="진리표">q</th>
+                        <th></th>
+                        <th class="진리표">~</th>
+                        <th class="진리표">p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">q</th>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                            <td></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                    </table>
+                    <li>~(p∧q) ≡ ~p∨~q(드 모르간 법칙)</li>
+                    <table>
+                        <th class="진리표">~</th>
+                        <th class="진리표">(p</th>
+                        <th class="진리표">∧</th>
+                        <th class="진리표">q)</th>
+                        <th></th>
+                        <th class="진리표">~</th>
+                        <th class="진리표">p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">~</th>
+                        <th class="진리표">q</th>
+                        <tr>
+                            <td><strong>F</strong></td>
+                            <td>T</td>
+                            <td><em>T</em></td>
+                            <td>T</td>
+                            <td></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td>T</td>
+                            <td><em>F</em></td>
+                            <td>F</td>
+                            <td></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td>F</td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                            <td></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td>F</td>
+                            <td><em>F</em></td>
+                            <td>F</td>
+                            <td></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                    <li>p → q ≡ ~q → ~p(대우법칙)</li>
+                    <table>
+                        <th class="진리표">p</th>
+                        <th class="진리표">→</th>
+                        <th class="진리표">q</th>
+                        <th></th>
+                        <th class="진리표">~</th>
+                        <th class="진리표">q</th>
+                        <th class="진리표">→</th>
+                        <th class="진리표">~</th>
+                        <th class="진리표">p</th>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><STRONG>T</STRONG></td>
+                            <td><em>T</em></td>
+                            <td></td>
+                            <td><EM>F</EM></td>
+                            <td>T</td>
+                            <td><STRONG>T</STRONG></td>
+                            <td><em>F</em></td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><STRONG>F</STRONG></td>
+                            <td><em>F</em></td>
+                            <td></td>
+                            <td><EM>T</EM></td>
+                            <td>F</td>
+                            <td><STRONG>F</STRONG></td>
+                            <td><EM>F</EM></td>
+                            <td>T</td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><STRONG>T</STRONG></td>
+                            <td><em>T</em></td>
+                            <td></td>
+                            <td><EM>F</EM></td>
+                            <td>T</td>
+                            <td><STRONG>T</STRONG></td>
+                            <td><em>T</em></td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><STRONG>T</STRONG></td>
+                            <td><em>F</em></td>
+                            <td></td>
+                            <td><EM>T</EM></td>
+                            <td>F</td>
+                            <td><STRONG>T</STRONG></td>
+                            <td><EM>T</EM></td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                    <li>(p∨q)∨r ≡ p∨(q∨r)(결합법칙)</li>
+                    <table>
+                        <th class="진리표">(p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">q)</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">r</th>
+                        <th><!--빈공간--></th>
+                        <th class="진리표">p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">(q</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">r)</th>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>T</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>T</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>T</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>F</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>T</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>F</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><strong>T</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><strong>F</strong></td>
+                            <td><!--빈공간--></td>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                    </table>
+                    <li>p∨(q∧r) ≡ (p∨q)∧(p∨r)(분배법칙)</li>
+                    <table>
+                        <th class="진리표">p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">(q</th>
+                        <th class="진리표">∧</th>
+                        <th class="진리표">r)</th>
+                        <th><!--빈공간--></th>
+                        <th class="진리표">(p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">q)</th>
+                        <th class="진리표">∧</th>
+                        <th class="진리표">(p</th>
+                        <th class="진리표">∨</th>
+                        <th class="진리표">r)</th>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>T</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>T</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>T</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>T</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>T</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>T</strong></td>
+                            <td><em>T</em></td>
+                        </tr>
+                        <tr>
+                            <td><strong>F</strong></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><!--빈공간--></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                            <td><strong><em>F</em></strong></td>
+                            <td><em>F</em></td>
+                            <td><strong>F</strong></td>
+                            <td><em>F</em></td>
+                        </tr>
+                    </table>
+                </ol>
+            </p>
+        </details>
+    </p>
+    <div class="dividing_line"></div>
+    <h2 id="연역적_추론">1.1.1.3. 연역적 추론</h2>
+    <a href="#title">
+        <button type="button">
+            맨 처음으로
+        </button>
+    </a>
+    <p class="본문">
+        연역적 추론이란 원래 알고 있던 판단을 근거로 새로운 판단을 유도하는 것이다.<br>
+        보통 진리표보다 편리하기에 자주 사용한다.<br>
+        *연역적 추론으로 다음 명제들을 증명해보자.
+    </p>
+    <ul>
+        <li>p→(q→r) ≡ p∧q→r</li>
+        <li>(p→q)∧(p→r) ≡ p→q∧r</li>
+        <li>(p→r)∨(q→s) ≡ p∧q→r∨s</li>
+    </ul>
+    <details>
+        <summary>[증명 보기·숨기기]</summary>
+            <p>
+                <ol>
+                    <li>
+                        <pre class="본문">
+p→(q→r) ≡ p→(~q∨r) (∵①)<br>
+          ≡ ~p∨(~q∨r) (∵①)<br>
+          ≡ (~p∨~q)∨r (∵④)<br>
+          ≡ ~(p∧q)∨r (∵②)<br>
+          ≡ (p∧q)→r (∵①)■
+                        </pre>
+                    </li>
+                    <li>
+                        <pre class="본문">
+(p→q)∧(p→r) ≡ (~p∨q)∧(~p∨r) (∵①)<br>
+          ≡ ~p∨(q∧r) (∵⑤)<br>
+          ≡ p→q∧r (∵①)■
+                        </pre>
+                    </li>
+                    <li>
+                        <pre class="본문">
+(p→r)∨(q→s) ≡ (~p∨r)∨(~q∨s) (∵①)<br>
+          ≡ (~p∨~q)∨(r∨s) (∵④)<br>
+          ≡ ~(p∧q)∨(r∨s) (∵②)<br>
+          ≡ (p∧q)→(r∨s) (∵①)■
+                        </pre>
+                    </li>
+                </ol>
+            </p>
+    </details>
+</body>
+</html>
